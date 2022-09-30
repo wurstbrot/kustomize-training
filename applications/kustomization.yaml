@@ -3,5 +3,12 @@ kind: Kustomization
 
 resources:
 - https://github.com/kubernetes-sigs/kustomize/examples/helloWorld
-# https://github.com/kubernetes-sigs/kustomize/tree/master/examples/helloWorld
-#- github.com/kubernetes-sigs/kustomize/examples/helloWorld
+
+- |-
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: the-map
+data:
+  altGreeting: "Good Afternoon!"
+EOF
