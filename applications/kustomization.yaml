@@ -4,12 +4,3 @@ kind: Kustomization
 resources:
 - https://github.com/kubernetes-sigs/kustomize/examples/helloWorld
 
-patches:
-  - |-
-  apiVersion: v1
-  kind: ConfigMap
-  metadata:
-    name: the-map
-  data:
-    altGreeting: "Good Afternoon!"
-  EOF
