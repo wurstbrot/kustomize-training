@@ -12,4 +12,3 @@ patches:
       name: the-map
     data:
       altGreeting: "Good Afternoon!"
-  EOF
